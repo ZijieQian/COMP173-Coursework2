@@ -9,7 +9,7 @@ To address this, our models prioritize IoU (Intersection over Union) as the prim
 
 The performance ranking of the models based on IoU is as follows:
 
-1. bse+input+lr – best performance
+1. bse+input+lr – best performance, reflect the capability of model.
 
 2. input+focal+lr – strong performance, selected for final analysis
 
@@ -18,3 +18,5 @@ The performance ranking of the models based on IoU is as follows:
 Here, input refers to the multi-input design, which significantly improves the model's ability to capture subtle landslide features in highly imbalanced datasets. The use of focal loss and learning rate adjustments further enhances the segmentation of rare positive pixels. Overall, these strategies allow the models to effectively detect landslides despite the extreme class imbalance.
 
 Moreoer, for the model without multi-input, other models, such as Res50 Unet, Residual U-Net, FCN32-VGG16, are evaluated to ensure that they could have similar performance when trained with suitable hyperparameters.
+
+Note: I apologize for the earlier mistakes — some of my test data was missing. Due to time constraints, in the input + focal + learning-rate experiment, the Attention U-Net was only trained for 60 epochs. However, I am confident that training it for the full 100 epochs and enabling the learning-rate scheduling would further improve its performance compared with the baseline model.
