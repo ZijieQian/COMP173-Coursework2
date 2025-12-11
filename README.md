@@ -16,3 +16,5 @@ The performance ranking of the models based on IoU is as follows:
 3. Model without multi-input – baseline performance
 
 Here, input refers to the multi-input design, which significantly improves the model's ability to capture subtle landslide features in highly imbalanced datasets. The use of focal loss and learning rate adjustments further enhances the segmentation of rare positive pixels. Overall, these strategies allow the models to effectively detect landslides despite the extreme class imbalance.
+
+Moreoer, for the model without multi-input, other models, such as Res50 Unet, Residual U-Net, FCN32-VGG16, are evaluated to ensure that they could have similar performance when trained with suitable hyperparameters.
